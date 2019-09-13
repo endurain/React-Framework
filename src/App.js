@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import { render } from "react-dom";
-import Header from './components/header.js';
+import Layout from './components/layout.js';
+
 
 
 
@@ -9,7 +10,8 @@ import Header from './components/header.js';
 const App = () => (
   <div>
     <h1>Endurain Framework</h1>
-      <Header />
+    <Layout />
+
 
 
   </div>

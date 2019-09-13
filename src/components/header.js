@@ -21,6 +21,6 @@ const Header = () => (
     </Router>
   </header>
 
-);
+)
 
 export default Header
