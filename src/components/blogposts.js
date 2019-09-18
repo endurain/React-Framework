@@ -1,10 +1,22 @@
 import React from 'react';
 
 
-const Blog = () => (
-  <div>
-    <h1>Blog</h1>
-  </div>
-);
+class  Blog  extends  React.Component {
+    constructor(){
+        super();
+        this.state  = {
+            isOpen:  false,
+            sections: [],
+            current:  null,
+            dataRoute:  "https://zacdevelopment.kinsta.cloud/wp-json/wp/v2/posts"
+        }
+    }
+}
+
+// const Blog = () => (
+//   <div>
+//     <h1>Blog</h1>
+//   </div>
+// );
 
 export default Blog
