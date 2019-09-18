@@ -11,6 +11,17 @@ class  Blog  extends  React.Component {
             dataRoute:  "https://zacdevelopment.kinsta.cloud/wp-json/wp/v2/posts"
         }
     }
+    render() {
+        return (
+        <div  className="App">
+
+
+              <h1>Blog</h1>
+
+        </div>);
+    }
+
+
 }
 
 // const Blog = () => (

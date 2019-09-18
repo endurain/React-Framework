@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import { render } from "react-dom";
+import './App.scss';
+// import { render } from "react-dom";
 import Layout from './components/layout.js';
 
 
