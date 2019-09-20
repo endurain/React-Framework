@@ -1,6 +1,7 @@
 $break-small: 980px;
 $break-large: 981px;
-
+$footer-gradient: radial-gradient(farthest-corner at 45px 45px, #40C9CC 0%, #31CC9A 100%);
+$header-gradient: linear-gradient(90deg,#5b79a2,#2e4469);
 
 .container {
    height: 100vh;
@@ -17,12 +18,20 @@ $break-large: 981px;
 nav {
   display: flex;
   justify-content: space-evenly;
+  background-image: $header-gradient;
+  padding: 3rem;
+    a {
+      color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
 }
 
 header {
   grid-row: 1;
   grid-column: 1/4;
   text-align: center;
+
 }
 main {
   grid-row: 2;
@@ -32,7 +41,7 @@ footer {
   grid-row: 3;
   grid-column: 1/4;
   text-align: center;
-  background-image: radial-gradient(farthest-corner at 45px 45px, #40C9CC 0%, #31CC9A 100%);
+  background-image: $footer-gradient;
 }
 .cell-1 {
    background: deepskyblue;
