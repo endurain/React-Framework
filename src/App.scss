@@ -14,16 +14,28 @@ $header-gradient: linear-gradient(90deg,#5b79a2,#2e4469);
    grid-template-columns: 1fr 2fr 1fr;
 }
 
+// nav {
+//   display: flex;
+//   justify-content: space-evenly;
+//   background-image: $header-gradient;
+//   padding: 3rem;
+//     a {
+//       color: #fff;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     }
+// }
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  background-image: $header-gradient;
-  padding: 3rem;
-    a {
-      color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    }
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #FC466B;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
 }
 
 #sidebarMenu {
@@ -51,7 +63,7 @@ nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
-.sidebarMenuInner li a{
+.sidebarMenuInner a{
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
