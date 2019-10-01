@@ -4,6 +4,7 @@ import './App.scss';
 import Layout from './components/layout.js';
 
 
+
 const App = () => (
   <Layout>
     <div>
