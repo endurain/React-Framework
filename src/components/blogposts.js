@@ -32,13 +32,14 @@ export default class Movies extends Component {
           currentMovie.featured_image = Object.values(myJSON)[i]['featured_image_url'];
           currentMovie.genre = Object.values(myJSON)[i]['genre'];
         }
+        // see if our fetch is pulling in data from wordpress
         console.log(JSON.stringify(myJSON));
       this.setState(newState);
       });
   }
 
   renderMovies() {
-    console.log('test');
+    console.log('renderMovies test');
     if (this.state.data) {
       const moviesArray = Object.values(this.state.data)
       return Object.values(moviesArray).map((movie, index) => this.populatePageAfterFetch(movie, index));
@@ -47,7 +48,7 @@ export default class Movies extends Component {
 
   populatePageAfterFetch(movie, index) {
     if (this.state.data) {
-
+      console.log('populatePageAfterFetch');
       return (
         <div key={index} index={index}>
           <h2 className="name">{movie.name}</h2>
