@@ -12,7 +12,7 @@ const Header = () => (
   <header>
     <nav>
       <MobileIcon />
-      <div className="menu sidebarmenu">
+      <div className="sidebarmenu">
         <div className="sidebarmenuInner">
           <Link to="/">Home</Link>{" "}
           <Link to="about">About</Link>
